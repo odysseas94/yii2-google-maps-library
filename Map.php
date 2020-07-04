@@ -390,7 +390,7 @@ class Map extends ObjectAbstract
         }
       #  $js[] = "(function(){";
         $js[] = $this->getClosureScopedVariablesScript();
-        $js[] = "function initialize(){";
+        #$js[] = "function initialize(){";
         $js[] = "var mapOptions = {$this->getEncodedOptions()};";
         $js[] = "var container = document.getElementById('{$containerId}');";
         $js[] = "container.style.width = '{$width}';";
